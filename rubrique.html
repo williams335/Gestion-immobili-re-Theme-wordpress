@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petits trains - Découvrir le modélisme ferroviaire</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="container">
+<header>
+<div class="jumbotron">
+	<h1>Petits trains</h1>
+	<p class="motto">Le site des amateurs de trains miniatures</p>
+</div>
+<nav>
+	<ul class="nav nav-pills">
+		<li class="active"><a href="#">Accueil</a></li>	
+		<li><a href="#">Découvrir le modélisme ferroviaire</a></li>	
+		<li><a href="#">Le matériel</a></li>	
+		<li><a href="#">Les thématiques</a></li>	
+		<li><a href="#">Se connecter</a></li>	
+		<li><a href="#" class="annonces">Petites annonces</a></li>	
+	</ul>
+</nav>
+<div class="well">
+<h2>Recherche</h2>
+	<form class="form-horizontal">
+	    <div class="form-group">
+	      <label for="search">Recherche</label>
+	      <input type="email" class="form-control input-lg" id="search" placeholder="Rechercher dans plus de cent articles ! ">
+	    </div>
+	</form>   
+</div> 
+</header>
+<div id="main" class="row">
+	
+	<div id="content" class="col-sm-9">
+		<article class="row intro">
+		 <ul class="breadcrumb">
+ 			 <li><a href="#">Accueil</a></li>
+  			 <li><a href="#">Rubrique</a></li>
+  			 <li class="active">Sous-rubrique</li>
+		 </ul> 
+			<div class="textuel col-sm-8">
+				<h1>Découvrir le modélisme ferroviaire</h1>
+				<div class="chapo">
+					<p>Introduction de la rubrique.</p>		
+					<p>Peut être sur plusieurs lignes/paragraphes.</p>	
+				</div>	
+			</div>	
+			<figure class="col-sm-4">
+				<img src="images/placeholder.png" alt="Alternatif" width="340" height="280" class="img-responsive" />			
+			</figure>	
+		</article>
+
+		<article class="row">
+			<figure class="col-sm-3">
+				<img src="images/placeholder.png" alt="Alternatif" width="240" height="180" class="img-responsive" />			
+			</figure>
+			<div class="textuel col-sm-9">
+				<h2><a href="#">Contenu dans la rubrique</a></h2>
+					<nav class="tags">
+						<ul class="list-inline">
+							<li><a href="#">Europe</a></li>
+							<li><a href="#">Chemin de fer forestier</a></li>			
+							<li><a href="#">Transport de passagers</a></li>	
+						</ul>	
+					</nav>	
+				<div class="chapo">
+					<p>Emplacement pour le chapeau .</p>
+				</div>
+				<div class="meta row">
+					<p class="col-sm-3">Par <a href="#">Nom de l'auteur</a></p>	
+					<p class="col-sm-9">Publié le 1<sup>er</sup> janvier 1970</p>
+				</div>
+			</div>		
+		</article>
+
+		<article class="row">
+			<figure class="col-sm-3">
+				<img src="images/placeholder.png" alt="Alternatif" width="240" height="180" class="img-responsive" />			
+			</figure>
+			<div class="textuel col-sm-9">
+				<h2><a href="#">Contenu dans la rubrique</a></h2>
+					<nav class="tags">
+						<ul class="list-inline">
+							<li><a href="#">Europe</a></li>
+							<li><a href="#">Chemin de fer forestier</a></li>			
+							<li><a href="#">Transport de passagers</a></li>	
+						</ul>	
+					</nav>	
+				<div class="chapo">
+					<p>Emplacement pour le chapeau .</p>
+				</div>
+				<div class="meta row">
+					<p class="col-sm-3">Par <a href="#">Nom de l'auteur</a></p>	
+					<p class="col-sm-9">Publié le 1<sup>er</sup> janvier 1970</p>
+				</div>
+			</div>		
+		</article>
+		
+	</div>
+	
+	<aside class="col-sm-3 ml-sm-2">
+	<h2>La communauté</h2>
+	<p>Petits trains est un site de passionnés, géré par des passionnés.</p>
+	<ul class="nav nav-tabs">
+		 <li class="active"><a data-toggle="tab" href="#inscription">Inscription</a></li>
+		 <li><a data-toggle="tab" href="#connexion">Connexion</a></li>
+  	</ul>
+	<div class="tab-content">
+	   <div id="inscription" class="tab-pane fade in active">
+			<h3>Inscription</h3>
+			<p>La consultation des ressources nécessite une inscription, gratuite :</p>
+			 <form>
+				  <div class="form-group">
+					 <label for="email">Adresse de courriel :</label>
+					 <input type="email" class="form-control" id="email">
+				  </div>
+				  <div class="form-group">
+					 <label for="pwd">Mot de passe :</label>
+					 <input type="password" class="form-control" id="pwd">
+				  </div>
+				  <button type="submit" class="btn btn-default">S'inscrire</button>
+			</form> 
+		</div>	
+	   <div id="connexion" class="tab-pane fade">
+			<h3>Connexion</h3>
+			<p>Vous avez déjà un compte ? Connectez-vous !</p>
+			 <form>
+				  <div class="form-group">
+					 <label for="email">Identifiant ou adresse de courriel :</label>
+					 <input type="email" class="form-control" id="email">
+				  </div>
+				  <div class="form-group">
+					 <label for="pwd">Mot de passe :</label>
+					 <input type="password" class="form-control" id="pwd">
+				  </div>
+				  <button type="submit" class="btn btn-default">Se connecter</button>
+			</form> 
+		</div>	
+	</div>
+	<h2>Recherche thématique</h2>
+	<h3>Activités</h3>
+	<nav class="tags">
+		<ul>
+			<li><a href="#">Transport de passagers</a></li>	
+			<li><a href="#">Chemins de fer forestiers</a></li>	
+         <li><a href="#">Chemins de fer miniers</a></li>	
+		</ul>
+	</nav>
+	<h3>Lieux</h3>
+	<nav class="tags">
+		<ul>
+			<li><a href="#">Amérique du Nord</a></li>	
+			<li><a href="#">Europe</a></li>	
+		</ul>
+	</nav>
+	
+	</aside>
+</div>	
+
+<footer class="row">
+<div class="col-sm-6 copyright colonne">
+	<p>&copy; Petits trains - 2019</p>
+</div>	
+<div class="col-sm-3 colonne">
+	<h3>Nos rubriques</h3>
+	<nav class="main">
+		<ul>
+			<li><a href="#">Accueil</a></li>	
+			<li><a href="#">Découvrir le modélisme ferroviaire</a></li>	
+			<li><a href="#">Créer une maquette</a></li>	
+			<li><a href="#">Le matériel</a></li>	
+			<li><a href="#">Les thématiques</a></li>	
+		</ul>
+	</nav>
+</div>	
+<div class="col-sm-3 colonne">
+	<h3>En pratique</h3>
+	<nav class="pratique">
+		<ul>
+			<li><a href="#">Conditions d'utilisation</a></li>	
+			<li><a href="#">Qui sommes-nous ?</a></li>	
+			<li><a href="#">Nous contacter</a></li>		
+			<li><a href="#">Se connecter</a></li>		
+		</ul>
+	</nav>
+</div>	
+</footer>
+
+</body>
+
+</html>

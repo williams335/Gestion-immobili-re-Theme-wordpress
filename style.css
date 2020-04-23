@@ -1,0 +1,280 @@
+/*
+Theme Name: Theme TP
+Theme URI: ----
+Author: Williams Koffi
+Author URI: https://williamskoffi.tech/
+Description: Site pour préparer le TP
+Version: 1.0.0
+*/
+
+html {background-color: #084178;}
+
+body {
+	background-color: #FEFEFE;
+	margin: 0 2em;
+	}
+
+h1, h2, h3, h4, h5, h6 {font-family: sans-serif;font-weight: bold;}
+h1 {color:#084178;}
+
+a {color: #084178;}
+a:hover {color: #000;}
+a:active {color: #CC0;}
+
+input {background-color: #FFF;}
+
+
+/************ HEADER ***********/
+header .jumbotron {
+	background-image: url(images/logo.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-clip: border-box;
+	background-color: #FFF;
+	background-size: contain;
+	}
+header .jumbotron h1 {color:#084178;}
+	
+header nav .nav-pills > li > a:focus, 
+header nav .nav-pills > li > a:hover	{background-color: #084178; color: #FFF;}
+header .abonnement a,
+header nav .nav-pills > li.active > a, 
+header nav .nav-pills > li.active > a:focus, 
+header nav .nav-pills > li.active > a:hover	{background-color: #084178; color: #FFF;}
+header .abonnement a {padding: 0.5em;}
+
+header nav .nav-pills > li > a.annonces {border: 2px solid  #084178;} 
+
+header .well {
+	background:none;
+	border:none;
+	box-shadow: none;
+	}	
+
+header h2 {display: none;}
+header form label {display: none;}
+	
+/********* CONTENU *******/
+
+#main {border-radius: 0 0 12px;}
+
+#content article {
+	padding:1em 0.5em;
+	}
+
+#content article .tags a {color: #000;}
+/********* Suppression de # *******/
+#content article .tags a:before { content:"#";font-weight:bold;}
+#content article .chapo p {font-size: 1.4em;}
+#content article .meta {font-size:0.8em;}
+#content article .meta a {color: #000;}
+
+#content article h2 {margin-top:0;}
+
+#content article .prix {
+    background: #084178;
+    color: #FFF;
+    padding: 6px;
+}
+
+#content #participer {
+	padding:1em;
+	}
+	
+#content #forums .emphase {font-weight: bold;}	
+#content #forums .auteur {color: #000; text-decoration: underline;}	
+
+/* Page de contenu */
+#content article .breadcrumb {background-color: #FEFEFE; margin-bottom: 0;}
+#content article .en-tete {margin-bottom: 0.em;}
+#content article #article-content figure {background-color: #DDD;}
+#content article #article-content figure.right {
+	float: right;
+	margin-left: 1em;
+	}
+#content article #article-content figure p {padding:0.2em;}	
+
+#content #forum article h2 {font-size: 1.1em; font-weight: bold;}
+#content #forum article img.img-responsive {max-width: 60px;}
+
+/********* ASIDE *******/	
+
+aside {
+	border: 3px solid #084178;
+	border-right: none;
+	border-radius: 12px 0 0 12px;
+}
+
+aside h2 {font-size: 1.3em;}
+aside h3 {font-size: 1em;}
+aside #inscription h3 {
+	font-weight: bold; 
+	color: #084178;
+	}
+	
+aside .nav > li > a:focus, 
+aside .nav > li > a:hover {background-color: #084178; color: #FFF;}
+	
+aside ul,
+aside li {
+	list-style: none; 
+	margin-left:0;
+	padding-left:0;
+	}
+aside nav.tags a {color: #000;}
+aside nav.tags a:before {content: "#"; font-weight:bold;}
+
+/********* FOOTER **********/
+footer {
+	background-color: #084178;
+	color: #FEFEFE;
+	}
+footer a {color: #FEFEFE;}	
+footer a:hover {color: #FFF; text-decoration: underline;}	
+
+footer h3 {display: none;}
+footer .colonne {margin-top:1em;}
+footer li {list-style: none;}
+
+
+/* Ajout de formes pour la recherche*/
+.screen-reader-text{
+
+
+}
+
+
+#s{
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#searchsubmit{
+	background: #084178;
+    color: #FFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    border-color: transparent;
+    margin: 7px 0;
+}
+
+.form-group{
+	display: inline-flex;
+}
+
+
+.menu-item a{
+	display: inline-flex;
+    list-style: none;
+    margin-top: 0;
+    list-style: none;
+    padding: 10px 15px;
+    border-color: transparent;
+    border-radius: 4px;
+    position: relative;
+    background: #FFF;
+   	text-decoration: none;
+
+}
+
+.menu-item a:hover {
+	background: #084178;
+	padding: 10px 15px;
+	color: #FFF;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.menu-item a:active, .page_item a:focus{
+	background: #084178;
+	padding: 10px 15px;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.menu li{
+	margin-top: 0;
+	margin-left: 0;
+	display: inline-flex;
+	list-style: none;
+}
+
+.menu{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#menu-item-98{
+	border: 2px solid #084178;
+	border-radius: 7px;
+	box-sizing: border-box;
+}
+
+.sub-menu:hover{
+	position: absolute;
+  	background-color: #f1f1f1;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+	display: block;
+}
+.sub-menu{
+	position: absolute;
+  	background-color: #f1f1f1;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+	display: none;
+}
+
+.sub-menu li{
+	color: black;
+    padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+}
+
+.wp-post-image{
+	display: block;
+    max-width: 100%;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+img[Attributes Style] {
+    width: 100%;
+	height: 100%;
+}
+
+.prix a{
+	color: white;
+	text-decoration: none;
+}
