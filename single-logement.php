@@ -1,12 +1,10 @@
 <?php get_header(); ?>
 <div class="container">
-        <?php while(have_posts()) : the_post(); ?>
+    <?php while(have_posts()) : the_post(); ?>
         <article>
             <h2><?php the_title(); ?></h2>
-            <h4>Code Postal: <?php the_field('code_postal'); ?> </h4><br><br>
-        <?php $logements=get_field('logement'); 
-            foreach ($logements as $post): ?>
-          <article class="row">
+   
+        <article class="row">
             <figure class="col-sm-3">
                 <?php 
                 $image = get_field('exposition');
@@ -27,8 +25,6 @@
         </article>
         <br>
         <br>
-        <?php endforeach; ?>
-   
 
         <?php endwhile; ?>
 </div>

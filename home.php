@@ -15,7 +15,6 @@ $args = array(
 // The Query
 $query = new WP_Query( $args );
 foreach ($query->posts as $post): ?>
-		
 		<article class="row">
 			<figure class="col-sm-3">
 				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?> </a>		
@@ -23,7 +22,7 @@ foreach ($query->posts as $post): ?>
 			<div class="textuel col-sm-9">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<div class="chapo">
-					<p><?php the_excerpt(); ?></p>		
+					<p><?php the_field('description'); ?></p>		
 				</div>
 			</div>
 

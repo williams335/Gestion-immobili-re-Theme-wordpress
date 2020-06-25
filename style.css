@@ -1,10 +1,11 @@
 /*
-Theme Name: Theme TP
+Theme Name: Kouassi Koffi
 Theme URI: ----
-Author: Williams Koffi
+Author: Kouassi Koffi
 Author URI: https://williamskoffi.tech/
-Description: Site pour préparer le TP
+Description: Site TP
 Version: 1.0.0
+Text Domain: Koffi_Kouassi_theme
 */
 
 html {background-color: #084178;}
@@ -15,9 +16,9 @@ body {
 	}
 
 h1, h2, h3, h4, h5, h6 {font-family: sans-serif;font-weight: bold;}
-h1 {color:#084178;}
+h1{color:#084178;}
 
-a {color: #084178;}
+a {color: #F49321;}
 a:hover {color: #000;}
 a:active {color: #CC0;}
 
@@ -33,17 +34,17 @@ header .jumbotron {
 	background-color: #FFF;
 	background-size: contain;
 	}
-header .jumbotron h1 {color:#084178;}
+header .jumbotron h1 {color:#F49321;}
 	
 header nav .nav-pills > li > a:focus, 
-header nav .nav-pills > li > a:hover	{background-color: #084178; color: #FFF;}
+header nav .nav-pills > li > a:hover	{background-color: #F49321; color: #FFF;}
 header .abonnement a,
 header nav .nav-pills > li.active > a, 
 header nav .nav-pills > li.active > a:focus, 
-header nav .nav-pills > li.active > a:hover	{background-color: #084178; color: #FFF;}
+header nav .nav-pills > li.active > a:hover	{background-color: #F49321; color: #FFF;}
 header .abonnement a {padding: 0.5em;}
 
-header nav .nav-pills > li > a.annonces {border: 2px solid  #084178;} 
+header nav .nav-pills > li > a.annonces {border: 2px solid  #F49321;} 
 
 header .well {
 	background:none;
@@ -72,7 +73,7 @@ header form label {display: none;}
 #content article h2 {margin-top:0;}
 
 #content article .prix {
-    background: #084178;
+    background: #F49321;
     color: #FFF;
     padding: 6px;
 }
@@ -97,32 +98,6 @@ header form label {display: none;}
 #content #forum article h2 {font-size: 1.1em; font-weight: bold;}
 #content #forum article img.img-responsive {max-width: 60px;}
 
-/********* ASIDE *******/	
-
-aside {
-	border: 3px solid #084178;
-	border-right: none;
-	border-radius: 12px 0 0 12px;
-}
-
-aside h2 {font-size: 1.3em;}
-aside h3 {font-size: 1em;}
-aside #inscription h3 {
-	font-weight: bold; 
-	color: #084178;
-	}
-	
-aside .nav > li > a:focus, 
-aside .nav > li > a:hover {background-color: #084178; color: #FFF;}
-	
-aside ul,
-aside li {
-	list-style: none; 
-	margin-left:0;
-	padding-left:0;
-	}
-aside nav.tags a {color: #000;}
-aside nav.tags a:before {content: "#"; font-weight:bold;}
 
 /********* FOOTER **********/
 footer {
@@ -135,6 +110,14 @@ footer a:hover {color: #FFF; text-decoration: underline;}
 footer h3 {display: none;}
 footer .colonne {margin-top:1em;}
 footer li {list-style: none;}
+
+.my-footer-menu li{
+ list-style: none;
+}
+
+.my-footer-menu li a:hover{
+ color: #FFF; text-decoration: underline;
+}
 
 
 /* Ajout de formes pour la recherche*/
@@ -170,7 +153,7 @@ footer li {list-style: none;}
 }
 
 #searchsubmit{
-	background: #084178;
+	background: #F49321;
     color: #FFF;
     border-radius: 4px;
     box-sizing: border-box;
@@ -186,7 +169,7 @@ footer li {list-style: none;}
 }
 
 
-.menu-item a{
+.my-menu a{
 	display: inline-flex;
     list-style: none;
     margin-top: 0;
@@ -195,41 +178,42 @@ footer li {list-style: none;}
     border-color: transparent;
     border-radius: 4px;
     position: relative;
-    background: #FFF;
+    background: #F49321;
+    color: #FFF;
    	text-decoration: none;
 
 }
 
-.menu-item a:hover {
-	background: #084178;
+.my-menu a:hover {
+	background: #FFF;
 	padding: 10px 15px;
-	color: #FFF;
+	color: #F49321;
 	text-decoration: none;
 	box-sizing: border-box;
 }
 
-.menu-item a:active, .page_item a:focus{
-	background: #084178;
+.my-menu a:active, .page_item a:focus{
+	background: #FFF;
 	padding: 10px 15px;
-	color: #FFF;
+	color: #F49321;
 	text-decoration: none;
 	border-radius: 4px;
 }
 
-.menu li{
+.my-menu li{
 	margin-top: 0;
 	margin-left: 0;
 	display: inline-flex;
 	list-style: none;
 }
 
-.menu{
+.my-menu{
 	margin-left: 0;
 	padding-left: 0;
 }
 
 #menu-item-98{
-	border: 2px solid #084178;
+	border: 2px solid #F49321;
 	border-radius: 7px;
 	box-sizing: border-box;
 }
@@ -272,9 +256,4 @@ footer li {list-style: none;}
 img[Attributes Style] {
     width: 100%;
 	height: 100%;
-}
-
-.prix a{
-	color: white;
-	text-decoration: none;
 }
